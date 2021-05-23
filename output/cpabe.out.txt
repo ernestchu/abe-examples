@@ -1,0 +1,51 @@
+Testing CP-ABE
+
+################## Setup ##################
+Master public key:
+AAAAFqpvya2fthvGHJh9FwUEaVK2ol9tcGsAAAHToQFBsgEEtLIBABHmOelg6vSWigif+UdIAw793fisQ5f2peDiKBhabdfKFOwdoPE99FtZ1plD3wy06iSK3WHmPo+dD5q+FP3YaHwb2J6/4Zbvp7UQuqHc/d+x/lcKLzjMs9j44zB2mSe7XAhE7YXlkO/HkfOkabS4FA7oAgXbn9yB/DYOixEvLJdfHLZ9zHDXVFaa7Goq3v/FCkag+GXHGW27C4AF+83B/fAjP8EaKAaxaNYkVy+ZBZInB7dG+lCTrvhWANN+Joc6rhaHTMdXruzxHYjcSmYpLtzJW1Dk3rH9rpgiWVrbuTXqEawzsYgmEgvl9aLAwOuGDHGXzdGo6YfOiok7d55DasehAmcxoSSyoSEDIC3DdS4zkXwDu/ClBqqTITrNdSr5F3CaG80ynDMhW+yhA2cxYaEksqEhAxRZ0dRyJ/+sO5wdEb9r4gJ3fkYrt+9d6ei15SpQ8PgDoQJnMqFEs6FBAiKvqGRnB1PD6gtiVZ5Z9HxObYbonV8AmTn0IKY/w+SQCXLmK5joGnIhpDyV4uYCsF66vS3mH+5ikmdMs3jXSjKhAWuhJR0AAAAg2VYR1NU3nsu9l1ugzeYdIhOFsEJMwRczrhI0OSkiM94=
+Master secret key:
+AAAAFqpvya9dXQ15ITJPTQMJBY+lLQNtc2sAAAB3oQVhbHBoYaEjsQAgCfIw+09g3jt2WiToeOrVAxv8t7X0j0iV6Yh3e6DGPwyhA2cyYaFEs6FBAiI3/QNpTzpPxmxHlHwxK60TbKpfKaFDRdJi88yM6FAtFigz13lwTrdf3QAs26HqpFmBsvDowv1H2PLuHvBSo/E=
+###########################################
+
+
+################# Encrypt #################
+Policy 1:
+"attr1 or attr2"
+Plaintext:
+hello world!
+Ciphertext:
+AAABq6ETqm/JiDyn5jh6BtoU6iPXVRnIIrIBk6EHQ19hdHRyMaEksqEhAgxmLn/qv7RttcPJ5fqTN0E5IYayPCd3oIS4dN9JmSsuoQdDX2F0dHIyoSSyoSECGPgCD1obSrC8gtJbXejca3DkoY4aCg4HTE5lPh+14IOhBkNwcmltZaEksqEhAhjFC8B4KFDeUL429ULSZVJkVbnxpWYv2EQ9o1SXiLnnoQdEX2F0dHIxoUSzoUEDBcWOtSMr0pqdHKtBW93Y0kMLqoqItKwNIPurMbluXwwRJNMzAzGWu7Af82YCNwwncs2JDQt/Qysd7j6brSJALaEHRF9hdHRyMqFEs6FBAwfZ76IfWzRGPcimU21gJTaSJNRVVYY1HqVb3awXMQQdCuZkp7MKFK9DbyFTg8r2TG5tWuEaOiGuRSFrveTCKcOhA19FRKFFHQAAAEDl5fFiUHoiwrdiACMoIyk1LljKo7u8BPwy9jsUycF6HsdaIOd+m+ExzBBL6QHLfFkHVukFEZj0+ngxjIA6guKboQZwb2xpY3mhEx0AAAAOYXR0cjEgb3IgYXR0cjIAAABloROqAEaIPKfmOHoG2hTqI9dVGcgioU6hAkNUoREdAAAADCYshvmRVlMbOqcdtqECSVahFR0AAAAQESbswyEPQyGorzkYeY6AVaEDVGFnoRUdAAAAEADmYW+ph/qWUfm2MU/SNkM=
+
+Policy 2:
+"attr1 and attr2"
+Plaintext:
+hello world!
+Ciphertext:
+AAABrKETqm/JtlLy0fdHLgv7ON1dqEWx7LIBlKEHQ19hdHRyMaEksqEhAhk6kTQq9LahjU7oeaQchgxqQFNOnRs81qILAFIVvH4YoQdDX2F0dHIyoSSyoSEDF7RWFex7Z0/s5wAOAQAEL5K+U2e69S01y0owafpV1sqhBkNwcmltZaEksqEhAhST78TtFuwrdnA4t9jf/VLr2dps1A7628KVivRWVxntoQdEX2F0dHIxoUSzoUECHz0Dw29E1yt34QaXz2xUjCR29vuokvrkStVu+OgzviQhcVRPmgF0rpnNvi0Y+d/kWLrsXvO+DtUxIYdMfs1ViKEHRF9hdHRyMqFEs6FBAwuyOkEDc+qLEI3BnVTM5iBo9qUB0rsV/09Z1S2tKntTHTmsSTDdMxOYU4dvIAVUu3SnH6ZoNKehwSty/2BmM2OhA19FRKFFHQAAAEDap8jvf+cyAZorCzjiZgmmrqalm1WYna4G1lJBJawsFeCEQ0ANlWO4UICnZIocW+jOYSyXdeAa1wRDItxF7OJhoQZwb2xpY3mhFB0AAAAPYXR0cjEgYW5kIGF0dHIyAAAAZaETqgBGtlLy0fdHLgv7ON1dqEWx7KFOoQJDVKERHQAAAAz2FrWi5+5sNCtPrkKhAklWoRUdAAAAEDBtuROf0mERrx31EZVvoEGhA1RhZ6EVHQAAABB9gtYc6yozaf4NIKMUVEvB
+
+#########################################
+
+
+################# KeyGen ##################
+Receiver's attributes:
+"|attr1|"
+Generated key:
+AAAAF6pvyf7sw5EupaZmR9cSU/US8SNrZXkwAAAA0qEBS6FEs6FBAw/b5prrnIOq3j662udRPMCY288eAYxiOYZM+8qvvHRiHzjf4k+Rqfyjf6q/6jI/neshmlbDoqu5DSh1OQfOxPKhCEtYX2F0dHIxoSSyoSECDtx9fxexfKvedKBKGXRRsA9cg1Qthg3XQ4CEQkN3E1+hAUyhRLOhQQMSE4rGTjqPUtmcw47GnZRfCksBUUpT72uccQG8tByR/AzbVHS96iXbBbd1qs5+1IUJ2kQpKu6zHVVbqbeR+iV6oQVpbnB1dKEHfGF0dHIxfA==
+#########################################
+
+
+################# Decrypt #################
+Policy 1: (the receiver shouldn't know this)
+"attr1 or attr2"
+Decrypt:
+Found Key: 'key0' => '|attr1|'
+Recovered message: hello world!
+
+Policy 2: (the receiver shouldn't know this)
+"attr1 and attr2"
+Decrypt:
+Key Manager could not find an appropriate key to decrypt!
+Failed to recover the message.
+
+#########################################
+

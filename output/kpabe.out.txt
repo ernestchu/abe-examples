@@ -1,0 +1,51 @@
+Testing KP-ABE
+
+################## Setup ##################
+Master public key:
+AAAAFqpvyvIUTY1MJr4uqneRrnffOuxtcGsAAAGooQFZsgEEtLIBAAADt+BrtFdWotZEY+OTMBmqwxpXBQCIjiPpdcm7LBUEB8/WZW76CNR3B6cDrG3be2lZcLD00T7ffn/CwWMisgAS3o0gV0TLYnobwcE+juj2ZvABva7mja3xb416v5P3kyChh9TGZCrjmVRoDpDCntXggIKXNfJfc5F+La2GyyrOG4RkmguyrzrtVhDnLjM2ReR2nY2z9zIcCj4KX3d/F8QY+P3m/WNBOGf3DF/0L4Glz9uo3BFPxtW/sfFuUwFlxABia290T75Ad93BwNCs3O9hoskJDGhDdN9E/v6xSGjYF5FVQQ2EuOT1gepzoDEFrx+K14X7PM5Iec2BbelaNJChAmcxoSSyoSECIHEG7HgcVgK0lFVe1cy8ItjHngVQjGAWxTxmWfTH5IChAmcyoUSzoUECF9GbCcEMnFz35Pv1ACzJu11gzA7PvMa8i83IQIa+O3cI5hoZT4wqyxSWwBkbFSrTw3IpR8cGQxTpyOw0dG+2eaEBa6ElHQAAACBtL89G42F3DPt8gDo9MfTLynGCJsYuq5gLHra/W5NMzQ==
+Master secret key:
+AAAAFqpvytBX7qhHllR2228YbtDe+1Ztc2sAAAAooQF5oSOxACAaQ3l9rFUtmubsZXRL/SDrljeTd5IHxCLBROoOHHlomQ==
+###########################################
+
+
+################# Encrypt #################
+Attribute set1:
+"|attr1|attr2|"
+Plaintext:
+hello world!
+Ciphertext:
+AAABKaETqm/KDNJo//+q+43NOt8ccM8cnrIBEaEHQ19hdHRyMaEksqEhAwvd5Tg16geGQ3XYSEHUYByLvCHyfWH93vwHC0lkhPS4oQdDX2F0dHIyoSSyoSECFvTd/J8FFRtrfsVeC381scQs//CyYw3igkC/DkwWB7uhBENwcjKhRLOhQQIaIl6ZO0F/cmWNbp+vL79e5KGikY6KL74fLojz2wPpugc+tF+vCKXpZrYCGZ7MrJqXhvxXChd+zioOaBzh4PtKoQNfRUShRR0AAABA9huG/dh+WBb7nPXg9F1e1rmOR0lSg/O4RsGQEFsoaIHwcYJVQ2tEMmcZ80KOQvZjzsxk+nM3VCURwIVG5KjCIqEKYXR0cmlidXRlc6ENfGF0dHIxfGF0dHIyfAAAAGWhE6oARgzSaP//qvuNzTrfHHDPHJ6hTqECQ1ShER0AAAAMD0UTscEGP2UZTEwBoQJJVqEVHQAAABA1MPPWcwMyP/OyWiYUECfCoQNUYWehFR0AAAAQmODIewgLg18ir1zLLRVeCg==
+
+Attribute set2:
+"|attr3|attr4|"
+Plaintext:
+hello world!
+Ciphertext:
+AAABKaETqm/KefcP3ToyhSqZCt/914eSDLIBEaEHQ19hdHRyM6EksqEhAiMizSIy7V466W9bAfzSCx2B05kA2JxhPjyyOi4BUnsdoQdDX2F0dHI0oSSyoSECILj9YXV85gn63tIArlqUizZysnoVLETFMpK3to8UIA2hBENwcjKhRLOhQQICohQyww2GmPRbRUxVIqI/XyiT+WHSxmAlg/DQvZq2pweMSFFY+fHQ2czxsMcuGL2Gf//e5Iv0bnJvb2YI9thAoQNfRUShRR0AAABA3GcVeghKNhHc+T2aSslaa4TCsmF8at/IVOIv2o/zUPL6O5EeOQ0/LRxHUbnP7NDouBa3Xu35oz907VTWWpuRXKEKYXR0cmlidXRlc6ENfGF0dHIzfGF0dHI0fAAAAGWhE6oARnn3D906MoUqmQrf/deHkgyhTqECQ1ShER0AAAAMrEMb+ZvDXLrCQh/FoQJJVqEVHQAAABBpwVJH239BEuTv/lx1478roQNUYWehFR0AAAAQico5XPjwIj1Q1oYoMs1XzQ==
+
+#########################################
+
+
+################# KeyGen ##################
+CA's policy:
+"(attr1 and attr3) or attr2"
+Generated key:
+AAAAF6pvyrAdEnd/yEPIopM3gAq8TrFrZXkwAAABoqEHRF9hdHRyMaEksqEhAgg3BcPscDR9+G9paTynUfa8SXST4eIbVOFs7Ozs3KWLoQdEX2F0dHIyoSSyoSECAQog89KKgZKiqfMzeWpMTTMXG1pgUQ3jn/LtsOk02h+hB0RfYXR0cjOhJLKhIQMYFI9GdTP3GYnDQwm3LuLRBiLD6biu8gASwAeZZP0uiqEHZF9hdHRyMaFEs6FBAiHTyoFS8F2D2UQtefzmBN3P2KCrfovgf85ww7TofKJyEVnRrRX1NhKk01gfwq1eUBl3ox77/1gjwjCgJdL+uvyhB2RfYXR0cjKhRLOhQQMAgc5JHpXit1hBqsPQMWUoRSO7FEPZeeGS4r1F12Bo+wY73wi6Kds7Adma+EB7f58TkUtzU5AF4WOtMnO0Lj8MoQdkX2F0dHIzoUSzoUEDFNl6CDGmu524mGH6pog2zKFYc8JjobdkSP7Hi8OGazgRxcXfUWrziyQUHJqTuhN2iRxFsnuXhmTHZndfFbvFDqEFaW5wdXShHx0AAAAaKGF0dHIxIGFuZCBhdHRyMykgb3IgYXR0cjI=
+#########################################
+
+
+################# Decrypt #################
+Sender's attributes 1:
+"|attr1|attr2|"
+Decrypt:
+Found Key: 'key0' => '(attr1 and attr3) or attr2'
+Recovered message: hello world!
+
+Sender's attributes 2:
+"|attr3|attr4|"
+Decrypt:
+Key Manager could not find an appropriate key to decrypt!
+Failed to recover the message.
+
+#########################################
+
