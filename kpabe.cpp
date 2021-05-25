@@ -44,7 +44,7 @@ int main(int argc, char **argv) {
     kpabe.keygen(policy, "key0");
     kpabe.exportUserKey("key0", sk);
     kpabe.importUserKey("key0", sk); // import into key manager
-    cout << "CA's policy:\n\"" << policy << "\"\n";
+    cout << "Receiver's policy:\n\"" << policy << "\"\n";
     cout << "Generated key:\n" << sk << endl;
     cout << "#########################################\n\n";
 
