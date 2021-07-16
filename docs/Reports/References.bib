@@ -1,0 +1,81 @@
+@InProceedings{Sha:85,
+author="Shamir, Adi",
+editor="Blakley, George Robert
+and Chaum, David",
+title="Identity-Based Cryptosystems and Signature Schemes",
+booktitle="Advances in Cryptology",
+year="1985",
+publisher="Springer Berlin Heidelberg",
+address="Berlin, Heidelberg",
+pages="47--53",
+abstract="In this paper we introduce a novel type of cryptographic scheme, which enables any pair of users to communicate securely and to verify each other's signatures without exchanging private or public keys, without keeping key directories, and without using the services of a third party. The scheme assumes the existence of trusted key generation centers, whose sole purpose is to give each user a personalized smart card when he first joins the network. The information embedded in this card enables the user to sign and encrypt the messages he sends and to decrypt and verify the messages he receives in a totally independent way, regardless of the identity of the other party. Previously issued cards do not have to be updated when new users join the network, and the various centers do not have to coordinate their activities or even to keep a user list. The centers can be closed after all the cards are issued, and the network can continue to function in a completely decentralized way for an indefinite period.",
+isbn="978-3-540-39568-3"
+}
+
+@InProceedings{SW:05,
+author="Sahai, Amit
+and Waters, Brent",
+editor="Cramer, Ronald",
+title="Fuzzy Identity-Based Encryption",
+booktitle="Advances in Cryptology -- EUROCRYPT 2005",
+year="2005",
+publisher="Springer Berlin Heidelberg",
+address="Berlin, Heidelberg",
+pages="457--473",
+abstract="We introduce a new type of Identity-Based Encryption (IBE) scheme that we call Fuzzy Identity-Based Encryption. In Fuzzy IBE we view an identity as set of descriptive attributes. A Fuzzy IBE scheme allows for a private key for an identity, $\omega$, to decrypt a ciphertext encrypted with an identity, $\omega$ {\textasciiacutex}, if and only if the identities $\omega$ and $\omega$ {\textasciiacutex} are close to each other as measured by the ``set overlap'' distance metric. A Fuzzy IBE scheme can be applied to enable encryption using biometric inputs as identities; the error-tolerance property of a Fuzzy IBE scheme is precisely what allows for the use of biometric identities, which inherently will have some noise each time they are sampled. Additionally, we show that Fuzzy-IBE can be used for a type of application that we term ``attribute-based encryption''.",
+isbn="978-3-540-32055-5"
+}
+
+@inproceedings{GPSW:06,
+author = {Goyal, Vipul and Pandey, Omkant and Sahai, Amit and Waters, Brent},
+title = {Attribute-Based Encryption for Fine-Grained Access Control of Encrypted Data},
+year = {2006},
+isbn = {1595935185},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/1180405.1180418},
+doi = {10.1145/1180405.1180418},
+abstract = {As more sensitive data is shared and stored by third-party sites on the Internet, there will be a need to encrypt data stored at these sites. One drawback of encrypting data, is that it can be selectively shared only at a coarse-grained level (i.e., giving another party your private key). We develop a new cryptosystem for fine-grained sharing of encrypted data that we call Key-Policy Attribute-Based Encryption (KP-ABE). In our cryptosystem, ciphertexts are labeled with sets of attributes and private keys are associated with access structures that control which ciphertexts a user is able to decrypt. We demonstrate the applicability of our construction to sharing of audit-log information and broadcast encryption. Our construction supports delegation of private keys which subsumesHierarchical Identity-Based Encryption (HIBE).},
+booktitle = {Proceedings of the 13th ACM Conference on Computer and Communications Security},
+pages = {89–98},
+numpages = {10},
+keywords = {delegation, attribute-based encryption, hierarchical identity-based encryption, audit logs, broadcast encryption, access control},
+location = {Alexandria, Virginia, USA},
+series = {CCS '06}
+}
+
+@INPROCEEDINGS{BSW:07,  
+author={Bethencourt, John and Sahai, Amit and Waters, Brent},  
+booktitle={2007 IEEE Symposium on Security and Privacy (SP '07)},   
+title={Ciphertext-Policy Attribute-Based Encryption},   
+year={2007},  
+volume={},  
+number={},  
+pages={321-334},  
+doi={10.1109/SP.2007.11}
+}
+
+@article{HQZH:14,
+title = {A general transformation from KP-ABE to searchable encryption},
+journal = {Future Generation Computer Systems},
+volume = {30},
+pages = {107-115},
+year = {2014},
+note = {Special Issue on Extreme Scale Parallel Architectures and Systems, Cryptography in Cloud Computing and Recent Advances in Parallel and Distributed Systems, ICPADS 2012 Selected Papers},
+issn = {0167-739X},
+doi = {https://doi.org/10.1016/j.future.2013.09.013},
+url = {https://www.sciencedirect.com/science/article/pii/S0167739X13001921},
+author = {Fei Han and Jing Qin and Huawei Zhao and Jiankun Hu},
+keywords = {KP-ABE, PEKS, ABEKS, Searchable encryption, Weak anonymity},
+abstract = {Users are inclined to share sensitive data in a remote server if no strong security mechanism is in place. Searchable encryption satisfies the need of users to execute a search encrypted data. Previous searchable encryption methods such as “public key encryption with keyword search (PEKS)” restricted the data access to certain users, because only the assigned users were able to search the encrypted data. In this paper we will discuss the relation between Attribute Based Encryption (ABE) and searchable encryption and define a weak anonymity of the ABE scheme, named “attribute privacy”. With this weak anonymity, we propose a general transformation from ABE to Attribute Based Encryption with Keyword Search (ABEKS) and a concrete attribute private key-policy ABE (KP-ABE) scheme. We present an ABEKS scheme based on this KP-ABE scheme and permit multi-users to execute a flexible search on the remote encrypted data.}
+}
+
+@misc{Zeu:18,
+author = {zeutro},
+title = {OpenABE},
+year = {2018},
+publisher = {GitHub},
+journal = {GitHub repository},
+howpublished = {\url{https://github.com/zeutro/openabe}},
+commit = {125fcf26017d959ff428d31b0209508877fb1df2}
+}
