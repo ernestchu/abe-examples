@@ -1,6 +1,8 @@
 # ABE Examples
 Examples for attribute-based encryption written in C++, featuring cyphertext-policy ABE (CP-ABE) and key-policy ABE (KP-ABE).
 
+### [Report](docs/Reports/Report.pdf)
+
 ## Dependencies
 
 - [OpenABE](https://github.com/zeutro/openabe)
